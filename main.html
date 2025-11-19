@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la persona Usuaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ladoIzquierdo">
+        <div class="logo">
+            <img src="./images/logo-uveg.png" alt="UVEG Logo" class="UVEGLogo">
+            <div class="logoTexto">BIENVENIDO</div>
+        </div>
+        <div>Foto sacada del campus virtual de la <u>UVEG</u></div>
+    </div>
+    <div id="ladoDerecho">
+        <div class="textoTitular">
+            <h3>
+                Registro de la persona Usuaria.
+            </h3>
+            <div class="reto">
+                Reto 3: <i>Crear un formulario HTML y aplicar estilos utilizando CSS</i>.
+            </div>
+        </div>
+        <div class="formulario">
+            <form id="signUp" method="post">
+                <legend>Llena el formulario</legend>
+                <div class="fullName">
+                    <fieldset>
+                        <label for="firstName">Nombre</label>
+                            <input type="text" id="firstName" placeholder="Sonia Ariadna" name="first_name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="lastName">Apellido</label>
+                        <input type="text" id="lastName" placeholder="San Vicente Rinza" name="last_name">
+                    </fieldset>
+                </div>
+                <div class="emailAndNumber">
+                    <fieldset>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="sosanvicente@uveg.edu.mx" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="phoneNum">Número de teléfono</label>
+                        <input type="tel" id="phoneNum" placeholder="8008648834" name="tel_number" minlength="10" maxlength="10" title="Always 10 characters only" required>
+                    </fieldset>
+                </div>
+                <div class="password">
+                    <fieldset >
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" minlength="8" required>
+                        <div id="errorMessage"></div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="confirmPass">Confirmar contraseña</label>
+                        <input type="password" id="confirmPass" minlength="8" required>
+                    </fieldset>
+                </div>
+                    <div class="descBox">
+                        <fieldset>
+                            <label for="descripcion">Descripción</label>
+                            <textarea id="descripcion" rows="4" cols="50"></textarea>
+                        </fieldset>
+                    </div>
+                    <div class="interestBox">
+                        <fieldset class="checklist">
+                            <input type="checkbox" id="tecnologia">
+                            <label for="tecnologia">Tecnología</label>
+                        </fieldset>
+                        <fieldset class="checklist">
+                            <input type="checkbox" id="arte">
+                            <label for="arte">Arte</label>
+                        </fieldset>
+                        <fieldset class="checklist">
+                            <input type="checkbox" id="deportes">
+                            <label for="deportes">Deportes</label>
+                        </fieldset>
+                        <fieldset class="checklist">
+                            <input type="checkbox" id="musica">
+                            <label for="musica">Música</label>
+                        </fieldset>
+                        <fieldset class="checklist">
+                            <input type="checkbox" id="ciencia">
+                            <label for="ciencia">Ciencia</label>
+                        </fieldset>
+                </div>
+            </form>
+        </div>
+        <div class="botonSubmit">
+            <button id="submitButton" form="signUp" type="submit">Registrarse</button>
+            <div class="iniciarSesion">Ya tienes una cuenta? <a href="https://campus.uveg.edu.mx/">Inicia Sesión</a></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
