@@ -10,12 +10,13 @@ function validatePass() {
         password2.className = "correct";
         errorMessage.textContent = "";
         } else {
-        password2.setCustomValidity("Confirm password");
+        password2.setCustomValidity("Confirmar contraseña");
         password1.className = "error";
         password2.className = "error";  
-        errorMessage.textContent = "*Passwords do not match";          
+        errorMessage.textContent = "*Las contraseñas no coinciden";          
         }
  }
 
 password1.onchange = validatePass;
+
 password2.onkeyup = validatePass;
